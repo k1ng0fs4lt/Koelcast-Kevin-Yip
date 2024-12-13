@@ -321,10 +321,6 @@ section.overons h2{
     margin-top: 0.5em;
 }
 
-section#kevinsbio{
-    height: 32em;
-}
-
 .fotometleeftijd{
     display: flex;
     flex-direction: column;
