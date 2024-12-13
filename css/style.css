@@ -279,14 +279,15 @@ input{
 /*Home pagina*/
 
 /*Over ons pagina*/
-section{
+section.overons{
     display: flex;
     flex-direction: row;
     width: 70em;
-    height: 27em;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5em;
+    padding-bottom: 1em;
     background-color: white;
     color: black;
     border: 10px solid black;
@@ -307,7 +308,7 @@ section{
     }
 }
 
-section p{
+section.overons p{
     font-family: fantasy;
     font-size: 25px;
     padding-left: 1em;
@@ -315,7 +316,7 @@ section p{
     width: 27em;
 }
 
-section h2{
+section.overons h2{
     font-size: 30px;
     margin-top: 0.5em;
 }
@@ -407,7 +408,7 @@ img#faisal{
     margin-bottom: 2rem;
 }
 
-.afleveringen{
+section.afleveringen{
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -421,12 +422,12 @@ img#faisal{
     padding: 3rem;
 }
 
-.afleveringen:hover{
+section.afleveringen:hover{
     scale: 104%;
     transition: 300ms ease-in-out;
 }
 
-.afleveringen h3{
+section.afleveringen h3{
     font-size: 30px;
     font-weight: normal;
     text-align: left;
@@ -436,7 +437,7 @@ img#faisal{
     margin-top: 1em;
 }
 
-.afleveringen p{
+section.afleveringen p{
     font-size: 20px;
     width: 33em;
     margin-left: 1em;
