@@ -1,0 +1,566 @@
+/*Navigatiebalk*/
+#logo{
+    width: 130px;
+    height: 130px;
+    margin: 1em;
+    animation-name: logoKoelcast;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logoKoelcast{
+    0% {
+        transform: rotateY(0deg)
+    }
+    50% {
+        transform: rotateY(180deg)
+    }
+    100% {
+        transform: rotateY(360deg)
+    }
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    background-color: white;
+    margin-bottom: 4em;
+    border: 15px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li a{
+    font-family: fantasy;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    margin: 1em;
+}
+
+nav li a:hover{
+    color: rgb(1, 55, 117);
+    scale: 150%;
+    transition: 300ms ease-in-out;
+}
+/*Navigatiebalk*/
+
+/*Algemeen*/
+body{
+    margin: 0em;
+    color: rgb(1, 55, 117);
+    font-weight: normal;
+    font-family: fantasy;
+    background-image: url('../images/koelcastachtergrond.jpg');
+    background-attachment: fixed;
+    background-size: 90em;
+    background-position: center;
+}
+
+
+h1{
+    text-align: center;
+    font-weight: normal;
+    color: rgb(1, 55, 117);
+    font-size: 70px;
+    width: auto;
+    margin-bottom: 0em;
+}
+
+h2{
+    font-weight: normal;
+    font-size: 80px;
+    color: rgb(1, 55, 117);
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 0em;
+}
+
+p{
+    font-family: helvetica;
+}
+
+.koptekstmetpijl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.koptekstmetpijl h2{
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    margin-bottom: 0em;
+}
+
+.pijl{
+    margin-top: 0em;
+    height: 7em;
+    width: 10em;
+    animation-name: pijl;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pijl{
+    0% {
+        transform: rotateX(40deg)
+    }
+    50% {
+        transform: rotateX(-40deg)
+    }
+    100% {
+        transform: rotateX(40deg)
+    }
+}
+
+article{
+    width: auto;
+    height: auto;
+    background-color: #70e2fc;
+    border-bottom: 10px solid black;
+    border-top: 10px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation-name: tussenKoppen;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tussenKoppen{
+
+    0% {
+        transform: rotateX(20deg)
+    }
+    50% {
+        transform: rotateX(-20deg)
+    }
+    100% {
+        transform: rotateX(20deg)
+    }
+
+}
+
+article h4{
+    text-align: center;
+    font-weight: normal;
+    color: rgb(1, 55, 117);
+    font-size: 28px;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 1.5em;
+}
+
+article h3{
+    text-align: center;
+    font-weight: normal;
+    color: rgb(1, 55, 117);
+    font-size: 40px;
+    margin-top: 1.5em;
+    width: auto;
+}
+
+article p{
+    font-weight: normal;
+    font-size: 35px;
+    color: rgb(1, 55, 117);
+    text-align: center;
+    margin-top: 1.6em;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+/*Algemeen*/
+
+/*Home pagina*/
+.recent{
+    display:flex;
+    flex-direction: column;
+    border: 10px solid black;
+    height: 52rem;
+    width: 50rem;
+    justify-content: center;
+    align-items: start;   
+    margin: auto;
+    background-color: white;
+}
+
+.recent:hover{
+    scale: 104%;
+    transition: 300ms ease-in-out;
+}
+
+.recent h5{
+    font-weight: normal;
+    font-size: 30px;
+    color: rgb(1, 55, 117);
+    text-align: center;
+    margin-left: 1em;
+}
+
+.recent p{
+    margin-right: 2rem;
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    margin-left: 1.5em;
+}
+
+#kopfoto{
+    width: 45em;
+    height: 27em;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid rgb(1, 55, 117);
+}
+
+#bekijkrecent{
+    width: 5em;
+    height: 3em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: fantasy;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(1, 55, 117);
+    background-color: #70e2fc;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+label{
+    font-size: 30px;
+    color: rgb(1, 55, 117);
+}
+
+input{
+    width: 30em;
+    height: 15em;
+    margin-top: 2em;
+    border-radius: 10px;
+}
+
+#invoerveld::placeholder{
+    padding: 6em;
+}
+
+#verzenden{
+    font-family: fantasy;
+    font-size: 16px;
+    width: 8em;
+    height: 4em;
+    margin-top: 1.2em;
+    color: rgb(1, 55, 117);
+    background-color: #70e2fc;
+}
+
+#verzenden:hover{
+    color: white;
+    transition: 500ms ease-in-out;
+}
+/*Home pagina*/
+
+/*Over ons pagina*/
+section{
+    display: flex;
+    flex-direction: row;
+    width: 70em;
+    height: 27em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    background-color: white;
+    color: black;
+    border: 10px solid black;
+    animation-name: section;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes section{
+    0% {
+        transform: rotate(2.5deg)
+    }
+    50% {
+        transform: rotate(-2.5deg)
+    }
+    100% {
+        transform: rotate(2.5deg)
+    }
+}
+
+section p{
+    font-family: fantasy;
+    font-size: 25px;
+    padding-left: 1em;
+    padding-top: 0.2em;
+    width: 27em;
+}
+
+section h2{
+    font-size: 30px;
+    margin-top: 0.5em;
+}
+
+section#kevinsbio{
+    height: 32em;
+}
+
+.fotometleeftijd{
+    display: flex;
+    flex-direction: column;
+}
+
+img#mart{
+    height: 20em;
+    width: 20em;
+    margin-left: 2em;
+    margin-top: 2em;
+    border: 5px solid rgb(1, 55, 117);
+}
+
+img#kevin{
+    height: 25em;
+    width: 20em;
+    margin-left: 2em;
+    margin-right: 1em;
+    margin-top: 2em;
+    border: 5px solid rgb(1, 55, 117);
+}
+
+img#faisal{
+    height: 20em;
+    width: 20em;
+    margin-left: 2em;
+    margin-top: 2em;
+    border: 5px solid rgb(1, 55, 117);
+}
+/*Over ons pagina*/
+
+/*Overzichts pagina*/
+#bekijkrecent:hover{
+    color: white;
+    scale: 104%;
+    transition: 300ms ease-in-out;
+}
+
+#seizoentab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#seizoentab a{
+    font-family: fantasy;
+    font-weight: normal;
+    color: rgb(1, 55, 117);
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0.5em;
+    border: 5px solid rgb(1, 55, 117);
+    padding: 0.5rem;
+}
+
+#seizoentab a:hover{
+    background-color: rgb(1, 55, 117);
+    color: white;
+    transition: 300ms ease-in-out;
+}
+
+#seizoentab ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border: 5px solid rgb(1, 55, 117);
+    height: 3rem;
+    width: auto;
+    padding: 0.5em;
+    margin-top: 5em;
+}
+
+#alleafl{
+    font-size: 55px;
+    margin-top: 2em;
+    margin-bottom: 2rem;
+}
+
+.afleveringen{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 10px solid black;
+    height: 12em;
+    width: 60em;
+    margin: auto;
+    margin-bottom: 2em;
+    padding: 3rem;
+}
+
+.afleveringen:hover{
+    scale: 104%;
+    transition: 300ms ease-in-out;
+}
+
+.afleveringen h3{
+    font-size: 30px;
+    font-weight: normal;
+    text-align: left;
+    margin-left: 0.7em;
+    margin-right: 1em;
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+
+.afleveringen p{
+    font-size: 20px;
+    width: 33em;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    color: black;
+}
+
+#aflevering1{
+    height: 15em;
+    width: 20em;
+    border: 5px solid rgb(1, 55, 117);
+    margin-left: 7em;
+}
+
+.bitesnack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-family: fantasy;
+}
+
+.afleveringenfotos{
+    height: 12em;
+    width: 20em;
+    border: 5px solid rgb(1, 55, 117);
+    margin-left: 7em;
+}
+
+.mealopenen{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mealopenen p{
+    margin-top: 1.7em;
+}
+
+.bekijk{
+    background-color:#70e2fc;
+    width: 5em;
+    height: 3em;
+    font-family: fantasy;
+    border: 3px solid rgb(1, 55, 117);
+    border-radius: 10px;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    font-size: 20px;
+    color: rgb(1, 55, 117);
+}
+
+.bekijk:hover{
+    color: white;
+    scale: 105%;
+    transition: 300ms ease-in-out;
+}
+/*Overzichts pagina*/
+
+/*Footer*/
+footer{
+    margin-top: 15em;
+    background-color: #70e2fc;
+    color: rgb(1, 55, 117);
+}
+
+footer p{
+    font-family: fantasy;
+}
+
+footer p:hover{
+    color: white;
+    transition: 500ms ease-in-out;
+}
+
+ul.lijst1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 2em;
+}
+
+ul.lijst1 h5{
+    font-weight: normal;
+    font-size: 30px;
+}
+
+ul.lijst2{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0em;
+}
+
+li.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1em;
+}
+li.social p{
+    margin-right: 1em;
+}
+
+#fblogo{
+    height: 3em;
+    width: 3em;
+}
+
+#instalogo{
+    height: 4em;
+    width: 4em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+}
+
+#twitterlogo{
+    height: 3em;
+    width: 3em;
+    
+}
+/*Footer*/
+
